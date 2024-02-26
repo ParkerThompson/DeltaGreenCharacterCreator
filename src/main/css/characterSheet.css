@@ -1,0 +1,655 @@
+.banner-img {
+    background-color:black;
+    width: 294px;
+    height: 82px;
+    border-bottom: 5px solid white;
+
+}
+
+body {
+    font-family: Garamond, serif;
+    background-image : url(../resources/background.png);
+    font-size: 16px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    align-content: start;
+}
+
+input {
+    border: none;
+    padding: 2px 0px;
+    background:none;
+}
+
+table {
+    border-spacing:0;
+    position: relative;
+}
+
+textarea {
+    border: none;
+    background:none;
+    width: 100%;
+    height: auto;
+}
+
+span {
+    min-width: 15px;
+}
+
+#motivations {
+    min-height: 365px;
+}
+
+
+#stat-div {
+    padding-right: 5px;
+}
+
+.pad-right {
+    padding-right: 10px;
+}
+
+.double-pad-right {
+    padding-right: 20px;
+}
+
+.pad-left {
+    padding-left: 10px;
+}
+
+.big-font {
+    font-size: 18px;
+}
+
+.btn {
+    border-radius: 8px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.adapted {
+    color: red;
+}
+
+.professionBtn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.skillModalConfirm {
+    border-radius: 8px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    /*width: 50%;*/
+    /*padding: 10px;*/
+}
+.two-rows {
+    grid-row: span 2;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+}
+
+.row:first-of-type {
+    flex-flow: wrap;
+}
+
+.row .rowspan2 {
+    flex: 1 1 100%;
+}
+
+.row div {
+    border: solid;
+    padding: 1em;
+    flex: 1;
+}
+
+.border {
+    border: solid;
+}
+
+.banner {
+    width: 100%;
+    background-color:black;
+    height: 82px;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.bottom-banner {
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+#form1 {
+    padding: 100px 100px
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.fill {
+    width: 100%
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.left.td {
+    width: 50%
+}
+
+.top {
+    border-top: 2px solid black;
+}
+
+.bottom {
+    border-bottom: 2px solid black;
+}
+
+.bottom-children td {
+    border-bottom: 2px solid black;
+}
+
+.left {
+    border-left: 2px solid black;
+}
+
+.right {
+    border-right: 2px solid black;
+}
+
+/*.right-children td {*/
+/*    border-right: 2px solid black;*/
+/*}*/
+
+/*tr.row td:first-child {*/
+/*    border-left: 2px solid black;*/
+/*}*/
+
+/*tr.row td:last-child {*/
+/*    border-left: 2px solid black;*/
+/*}*/
+
+.bottom-row {
+    border-right: 2px solid black;
+}
+
+.quarter {
+    width: 25%
+}
+
+.third {
+    flex: 33%;
+}
+
+.half {
+    width: 50%;
+}
+
+
+.flex-half {
+    flex: 50%;
+}
+
+.three-fourths {
+    width: 75%;
+}
+
+.two-thirds {
+    flex: 66%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.label {
+    display: grid;
+    /*grid-template-columns: 1fr 19fr;*/
+    border-spacing:0;
+}
+
+.label-text {
+    grid-area: label;
+    transform: rotate(-90deg);
+    display: block;
+    flex: 0 0 auto;
+}
+
+.label-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    flex: 1%;
+    max-width: 40px;
+}
+
+.forty-five {
+    flex: 45;
+}
+
+.pad {
+    padding-top: 5px;
+}
+
+.double-pad {
+    padding-top: 5px;
+}
+
+
+tbody {
+    grid-area: table;
+}
+.cards {
+    display: flex;
+    justify-content: left;
+}
+
+.card {
+    flex: 0 1 24%;
+}
+
+.dont-print {
+}
+
+.skill {
+    text-align:center;
+    width: 30%;
+    flex: 1;
+}
+.skill-check {
+    flex: 1;
+}
+
+.align-top {
+    vertical-align: text-top;
+}
+
+.align-left {
+    text-align:left;
+}
+
+
+.other-skill{
+    text-align:center;
+    width: 30%;
+}
+
+/* The Modal (background) */
+.modal {
+    /* display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.plus {
+    max-width: 20px;
+    max-height: 20px;
+    text-align: left;
+}
+
+.minus {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.random {
+    width: 20px;
+    height: 20px;
+}
+
+.skill-td {
+    width:15%;
+}
+
+.skill-table {
+    table-layout:auto;
+}
+.width-auto {
+    width:auto;
+}
+
+.skill-td-child {
+    width: 33%;
+}
+
+.large-font {
+    font-size: 18px;
+}
+
+.weapon-input {
+    text-align:left;
+    align-content: flex-start;
+    /*overflow-wrap: break-word;*/
+    /*border-right: solid 2px black;*/
+    width: 75%;
+}
+
+.weapon-select-row {
+    /*width: 100%;*/
+}
+
+.weapon-select {
+    /*width: 100%;*/
+    max-width: 100px;
+}
+
+.ninety {
+    width: 90%;
+}
+
+.npc-div {
+    font-size: 16px;
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex-container-vert {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.flex-item:nth-child(1) {
+    flex-direction: column;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+    flex-direction: column;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(3) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(4) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /*padding-right: 20px;*/
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+}
+
+.flex-hundred {
+    flex:99%;
+}
+
+.flex-fifty {
+    flex:50%;
+}
+
+.flex-content {
+    flex:fit-content;
+}
+
+.fit-content {
+    width:fit-content;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.no-wrap {
+    /*flex-wrap: nowrap;*/
+    white-space: nowrap;
+}
+
+.personal-details-content {
+    white-space: nowrap;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+#statistical-data tr td div {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.labeled-section {
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid black;
+    /*border-right: 2px solid black;*/
+    /*border-bottom: 2px solid black;*/
+
+}
+
+.content-container {
+    flex:99%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*white-space: nowrap;*/
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.text-input {
+    width: 100%;
+}
+.skill-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    /*border-right: 2px solid black;*/
+    border-bottom: 2px solid black;
+}
+
+.skill-name {
+    border-right: 2px solid black;
+    min-width: 140px;
+    flex: 8;
+}
+
+.other-skill-div {
+    /*max-width: 200px;*/
+    flex-grow: 3;
+    width: 50%;
+    border-right: 2px solid black;
+    /*min-width: 100px;*/
+    /*border-right: 2px solid black;*/
+}
+
+/*.other-skill-row {*/
+/*    max-width: 155px;*/
+/*    border-right: 2px solid black;*/
+/*}*/
+
+.other-skill-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    min-height: 44px;
+}
+
+.skill-container-label {
+    min-height: 22px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+}
+
+.skills {
+    /*max-height: 400px;*/
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#home-and-special-training {
+    min-height: 200px;
+}
+
+.weapon-cell {
+    width: 1%;
+}
+
+.weapon-table {
+    max-width:100%;
+    white-space: nowrap;
+}
+
+/*.weapon-row {*/
+/*    width: auto;*/
+/*}*/
